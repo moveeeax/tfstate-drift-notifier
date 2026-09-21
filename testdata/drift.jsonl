@@ -1,0 +1,7 @@
+{"@level":"info","@message":"Terraform 1.7.0","@module":"terraform.ui","type":"version"}
+{"@level":"info","@message":"aws_s3_bucket.logs: Drift detected (update)","type":"resource_drift","change":{"resource":{"addr":"aws_s3_bucket.logs","resource_type":"aws_s3_bucket"},"action":"update"}}
+{"@level":"info","@message":"aws_security_group.web: Plan to update","type":"planned_change","change":{"resource":{"addr":"aws_security_group.web","resource_type":"aws_security_group"},"action":"update"}}
+{"@level":"info","@message":"aws_instance.app: Plan to replace","type":"planned_change","change":{"resource":{"addr":"aws_instance.app","resource_type":"aws_instance"},"actions":["delete","create"]}}
+{"@level":"info","@message":"aws_iam_role.dead: Plan to delete","type":"planned_change","change":{"resource":{"addr":"aws_iam_role.dead","resource_type":"aws_iam_role"},"action":"delete"}}
+{"@level":"info","@message":"data.aws_ami.ubuntu: read","type":"planned_change","change":{"resource":{"addr":"data.aws_ami.ubuntu","resource_type":"aws_ami"},"action":"read"}}
+{"@level":"info","@message":"Plan: 0 to add, 2 to change, 1 to destroy.","type":"change_summary","changes":{"add":0,"change":2,"remove":1,"operation":"plan"}}

@@ -1,0 +1,3 @@
+{"@level":"info","@message":"Terraform 1.7.0","@module":"terraform.ui","type":"version"}
+{"@level":"info","@message":"data.aws_ami.ubuntu: read","type":"planned_change","change":{"resource":{"addr":"data.aws_ami.ubuntu","resource_type":"aws_ami"},"action":"read"}}
+{"@level":"info","@message":"No changes. Your infrastructure matches the configuration.","type":"change_summary","changes":{"add":0,"change":0,"remove":0,"operation":"plan"}}
