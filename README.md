@@ -110,3 +110,7 @@ See [`examples/`](examples/) for runnable fixtures.
 ## License
 
 [MIT](LICENSE)
+
+---
+
+**Archived on 2026-11-05.** merge into tfstate-drift. It does the same job with weaker detection: it counts `planned_change` lines, so unapplied config edits show up as "drift", and it shows no attribute diffs. Its one unique piece, Slack notification, is about 30 lines and ports easily. Archive after porting. The scope moves to [tfstate-drift](https://github.com/moveeeax/tfstate-drift/issues/3).
