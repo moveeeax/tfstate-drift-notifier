@@ -17,6 +17,8 @@ stays quiet on clean runs.
 
 ## Install
 
+Requires Go 1.26 or newer.
+
 ```console
 go install github.com/moveeeax/tfstate-drift-notifier/cmd/tfstate-drift-notifier@latest
 ```
@@ -71,8 +73,11 @@ jobs:
   drift:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: hashicorp/setup-terraform@v3
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version: stable
+      - uses: hashicorp/setup-terraform@v4
       - run: terraform -chdir=env/prod init -input=false
       - run: |
           go install github.com/moveeeax/tfstate-drift-notifier/cmd/tfstate-drift-notifier@latest
@@ -92,6 +97,8 @@ create/update/delete/replace. Non-JSON and unrelated log lines are tolerated, so
 it survives merged stderr and version banners.
 
 ## Development
+
+Requires Go 1.26 or newer; CI tests against Go 1.26 and 1.27.
 
 ```console
 go test ./...

@@ -1,0 +1,11 @@
+# Binaries from go build
+/tfstate-drift-notifier
+*.exe
+dist/
+
+# Test and coverage output
+coverage.out
+*.test
+
+# Captured plan streams
+plan.jsonl
